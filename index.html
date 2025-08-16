@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p>Explore our creative and technical offerings.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <!-- Filter Buttons -->
+  <section class="filters">
+    <button onclick="filterCards('all')">All</button>
+    <button onclick="filterCards('design')">Design</button>
+    <button onclick="filterCards('development')">Development</button>
+    <button onclick="filterCards('marketing')">Marketing</button>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="grid">
+    <div class="card design" onclick="openModal('Design Project 1')">
+      <img src="assets/image1.jpg" alt="Design" />
+      <h3>Design Project 1</h3>
+      <p>Modern UI/UX design for web and mobile.</p>
+      <a href="#" class="btn">View Demo</a>
+    </div>
+    <div class="card development" onclick="openModal('Dev Project 1')">
+      <img src="assets/image2.jpg" alt="Development" />
+      <h3>Dev Project 1</h3>
+      <p>Responsive web app with clean code.</p>
+      <a href="#" class="btn">View Demo</a>
+    </div>
+    <!-- Add 4–6 more cards with different categories -->
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta" id="contact">
+    <h2>Want to work with us?</h2>
+    <p>Let’s build something amazing together.</p>
+    <a href="#" class="btn">Contact Us</a>
+  </section>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Project Title</h2>
+      <p>Detailed description of the selected project or service.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
